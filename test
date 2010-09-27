@@ -1,0 +1,4 @@
+{"type": "subscribe", "classes" : ["test42", "gschmidt", "test44"]}
+{"type": "send", "tag" : "123", "class" : "test42", "instance" : "blasphemy", "recipient" : "", "body" : ["be very afraid", "aww, it's just a cuddly wuddly little kitten-witten. that it would grow up to be a fearsome lionsaur is inconceivable"]}
+{"type": "send", "tag" : "456", "class" : "message", "instance" : "personal", "recipient" : "gschmidt", "body" : ["be very afraid", "it's all going according to plan"]}
+{"type": "unsubscribe", "classes" : ["test44", "whatever"]}
