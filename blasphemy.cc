@@ -16,6 +16,7 @@
 #include <fcntl.h>
 #include <netdb.h>
 #include <signal.h>
+#include <stdio.h>
 #include <string.h>
 
 #include "json/elements.h"
@@ -57,7 +58,7 @@ bool tryHandleResult(const ZNotice_t& notice);
 void
 ensure(Code_t ret, const char *who) {
   if (ret) {
-    com_err("", ret, who);
+    com_err("", ret, "%s", who);
     exit(1);
   }
 }

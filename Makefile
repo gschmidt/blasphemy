@@ -1,4 +1,5 @@
-LIBS=-lzephyr -lreadline -lkrb4 -lkrb5 -lk5crypto -ldes425 -lresolv -lcom_err -ldl -lcom_err
+# may need -lkrb4, -ldes425 on athena..
+LIBS=-lzephyr -lreadline -lkrb5 -lk5crypto -lresolv -lcom_err -ldl
 CFLAGS=-g
 CXXFLAGS=-g
 
@@ -10,7 +11,7 @@ all: blasphemy
 blasphemy.o: blasphemy.cc
 	${CXX} -o $@ -c ${CXXFLAGS} -Icajun $<
 
-blasphemy: blasphemy.o ${LIBS}
+blasphemy: blasphemy.o
 	${CXX} -o $@ blasphemy.o ${LIBS}
 
 clean:
